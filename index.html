@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>papers</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    :root {
+      --bg: #f7f7f5;
+      --card: #fff;
+      --ink: #111;
+      --muted: #646464;
+      --line: #d9d9d4;
+      --soft-line: #ececea;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 42px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      line-height: 1.15;
+      font-weight: 700;
+    }
+
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--ink);
+      border-radius: 6px;
+      color: var(--ink);
+      background: #fff;
+      text-decoration: none;
+      flex: 0 0 auto;
+    }
+
+    .home-link:hover,
+    .home-link:focus-visible {
+      color: #fff;
+      background: var(--ink);
+      outline: none;
+    }
+
+    .home-link svg { display: block; }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--card);
+      overflow: hidden;
+    }
+
+    .item-list {
+      display: grid;
+      margin: 0;
+      padding: 0 22px;
+      list-style: none;
+    }
+
+    .item-row {
+      padding: 16px 0;
+      border-top: 1px solid var(--soft-line);
+    }
+
+    .item-row:first-child { border-top: 0; }
+
+    .item-link {
+      display: block;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .item-link:hover .paper-title,
+    .item-link:focus-visible .paper-title {
+      text-decoration: underline;
+    }
+
+    .item-link:focus-visible { outline: none; }
+
+    .paper-meta {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 560px) {
+      main {
+        width: min(100% - 24px, 820px);
+        padding: 22px 0 32px;
+      }
+      h1 { font-size: 26px; }
+      .item-list { padding: 0 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topbar">
+      <h1>papers</h1>
+      <a class="home-link" href="" title="Home" aria-label="Home">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 10.5 12 3l9 7.5"></path>
+          <path d="M5 9.5V21h14V9.5"></path>
+          <path d="M9.5 21v-6h5v6"></path>
+        </svg>
+      </a>
+    </div>
+
+    <section class="panel">
+      <ul class="item-list">
+        <li class="item-row">
+          <a class="item-link" href="Letting_Time_Lie_Down.pdf" target="_blank" rel="noopener">
+            <span class="paper-title">Letting Time Lie Down: Visualizing and Quantifying Simple Harmonic Motion</span>
+            <span class="paper-meta">Xingyu Shu, Lizhi Fang, Shuai Wang, Yiting Sheng</span>
+          </a>
+        </li>
+        <li class="item-row">
+          <a class="item-link" href="No_Left-Hander_Left_Behind.pdf" target="_blank" rel="noopener">
+            <span class="paper-title">No Left-Hander Left Behind: Finding the Right Way in the Physics Laboratory</span>
+            <span class="paper-meta">Xingyu Shu</span>
+          </a>
+        </li>
+        <li class="item-row">
+          <a class="item-link" href="When_the_Pattern_Comes_Too_Easily.pdf" target="_blank" rel="noopener">
+            <span class="paper-title">When the Pattern Comes Too Easily: What an AI Simulation Takes Away in the Optics Lab</span>
+            <span class="paper-meta">Xingyu Shu</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
