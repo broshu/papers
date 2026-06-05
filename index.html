@@ -24,7 +24,7 @@
     }
 
     main {
-      width: min(820px, calc(100% - 32px));
+      width: min(1080px, calc(100% - 32px));
       margin: 0 auto;
       padding: 28px 0 42px;
     }
@@ -121,9 +121,26 @@
       line-height: 1.6;
     }
 
+    .paper-figures {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .paper-figures img {
+      height: 128px;
+      width: auto;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: #fff;
+      object-fit: contain;
+    }
+
     @media (max-width: 560px) {
       main {
-        width: min(100% - 24px, 820px);
+        width: min(100% - 24px, 1080px);
         padding: 22px 0 32px;
       }
       h1 { font-size: 26px; }
@@ -154,6 +171,16 @@
             <span class="paper-meta">Xingyu Shu</span>
           </a>
           <p class="paper-abstract">A classroom study of 96 students compares learning Young's double-slit interference via physical apparatus versus an AI-generated simulation. The AI group scored higher on the written test but struggled badly on an unscripted diffraction task. AI aids test readiness, but removing too much experimental friction can erode the empirical judgment real inquiry needs.</p>
+          <div class="paper-figures">
+            <img src="When_the_Pattern_Comes_Too_Easily/apparatus.jpeg" alt="Apparatus" loading="lazy">
+            <img src="When_the_Pattern_Comes_Too_Easily/simulation.png" alt="AI simulation" loading="lazy">
+            <img src="When_the_Pattern_Comes_Too_Easily/single-slit-provided-materials.jpeg" alt="Single-slit provided materials" loading="lazy">
+            <img src="When_the_Pattern_Comes_Too_Easily/single-slit-student-built-optical-path.jpeg" alt="Student-built optical path" loading="lazy">
+            <img src="When_the_Pattern_Comes_Too_Easily/24.jpeg" alt="Result 24" loading="lazy">
+            <img src="When_the_Pattern_Comes_Too_Easily/34.png" alt="Result 34" loading="lazy">
+            <img src="When_the_Pattern_Comes_Too_Easily/filtered.jpeg" alt="Filtered interference image" loading="lazy">
+            <img src="When_the_Pattern_Comes_Too_Easily/white-light.jpeg" alt="White-light fringes" loading="lazy">
+          </div>
         </li>
         <li class="item-row">
           <a class="item-link" href="Letting_Time_Lie_Down.pdf" target="_blank" rel="noopener">
@@ -161,6 +188,11 @@
             <span class="paper-meta">Xingyu Shu, Lizhi Fang, Shuai Wang, Yiting Sheng</span>
           </a>
           <p class="paper-abstract">A three-step sequence makes simple harmonic motion visible by unfolding its time axis into space. A laser on a spring–mass oscillator draws a glowing sinusoid; a free browser tool fits smartphone video to a sinusoid in seconds; pooled student data confirm T² ∝ m/k_eff to within 1%. It runs on equipment a school already owns.</p>
+          <div class="paper-figures">
+            <img src="Letting_Time_Lie_Down/analog_apparatus.png" alt="Analog apparatus" loading="lazy">
+            <img src="Letting_Time_Lie_Down/k_400g.png" alt="Sinusoidal fit (400 g)" loading="lazy">
+            <img src="Letting_Time_Lie_Down/Tsq_vs_m_with_theory.png" alt="T² vs m with theory" loading="lazy">
+          </div>
         </li>
         <li class="item-row">
           <a class="item-link" href="No_Left-Hander_Left_Behind.pdf" target="_blank" rel="noopener">
@@ -168,6 +200,16 @@
             <span class="paper-meta">Xingyu Shu</span>
           </a>
           <p class="paper-abstract">Physics lab tools and safety procedures assume right-handed use. Across a 4,226-student survey, caliper tests, and video coding, left-handed students showed higher measurement errors, slower times, and riskier circular-saw positioning—despite equal academic performance. The paper offers inclusive fixes like handedness audits and symmetric instruments.</p>
+          <div class="paper-figures">
+            <img src="No_Left-Hander_Left_Behind/front_view_cropped.png" alt="Front view" loading="lazy">
+            <img src="No_Left-Hander_Left_Behind/top_view_cropped.png" alt="Top view" loading="lazy">
+            <img src="No_Left-Hander_Left_Behind/thermal_left.jpeg" alt="Thermal grip (left-handed)" loading="lazy">
+            <img src="No_Left-Hander_Left_Behind/thermal_right.jpeg" alt="Thermal grip (right-handed)" loading="lazy">
+            <img src="No_Left-Hander_Left_Behind/heat_map.jpg" alt="Grip heat map" loading="lazy">
+            <img src="No_Left-Hander_Left_Behind/accuracy_ratios.png" alt="Accuracy ratios" loading="lazy">
+            <img src="No_Left-Hander_Left_Behind/deviation_raincloud.png" alt="Deviation raincloud plot" loading="lazy">
+            <img src="No_Left-Hander_Left_Behind/operate_time_boxplot.png" alt="Operation time boxplot" loading="lazy">
+          </div>
         </li>
       </ul>
     </section>
